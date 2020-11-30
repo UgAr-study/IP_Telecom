@@ -1,13 +1,7 @@
-#include <stdio.h>
-#include <sys/socket.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <netinet/in.h>
-#include <string.h>
-#include <arpa/inet.h>
+#include "header.h"
 
 
-#define PORT 8080
+
 int main (int argc, char *argv[]) {
     int cl_socket;
     struct sockaddr_in server_addr;

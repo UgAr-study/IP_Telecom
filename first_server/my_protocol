@@ -1,0 +1,15 @@
+Format: "Command: value"
+
+Commands: TYPE, TO, FROM, MESSAGE;
+    TYPE: TEXT
+    TO: address (now it is just name)
+    FROM: address (now it is just name)
+    MESSAGE: text message (string)
+
+
+Example:
+
+    "TYPE: TEXT\nTO: Ignat\nFROM: Artem\nMESSAGE: "Hello, Ignat!""
+
+Greating request:
+    "TYPE: TEXT\nTO: all\nFROM: Artem\nMESSAGE: """

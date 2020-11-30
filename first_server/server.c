@@ -1,14 +1,4 @@
-#include <stdio.h>
-#include <sys/socket.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <netinet/in.h>
-#include <string.h>
-#include <signal.h>
-#include <sys/wait.h>
-#include <sys/types.h>
-
-#define PORT 8080
+#include "header.h"
 
 void handler (int signo) {
     if (signo == SIGCHLD) {
@@ -30,8 +20,6 @@ int main(int argc, char const *argv[])
     long valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
-
-    // to http
 
 
     // Creating socket file descriptor
